@@ -2,5 +2,6 @@
   "name" : "rakudo-install",
   "version" : "0.0.1",
   "description" : "Install Rakudo as system package",
-  "category" : "utilities"
+  "category" : "utilities",
+  "url" : "https://github.com/melezhik/rakudo-install"
 }
