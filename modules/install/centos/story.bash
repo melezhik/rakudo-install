@@ -26,4 +26,4 @@ else
 
 fi 
 
-PATH=/opt/rakudo/bin:$PATH 
+PATH=/opt/rakudo/bin:$PATH perl6 --version
