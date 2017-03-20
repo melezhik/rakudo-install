@@ -30,6 +30,12 @@ Platforms supported:
 
     task-run 'install Rakudo', 'rakudo-install';
 
+    # or
+
+    task-run 'install Rakudo', 'rakudo-install', %(
+      url =>  'https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb'
+    );
+
 # Author
 
 Alexey Melezhik
