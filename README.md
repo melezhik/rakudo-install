@@ -24,6 +24,12 @@ Platforms supported:
     $ sparrow plg run rakudo-install --param url=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-CentOS7.3.1611-20170200-01.x86_64.rpm
     $ sparrow plg run rakudo-install --param url=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb
 
+# Usage with sparrowdo
+
+    $ cat sparrowfile
+
+    task-run 'install Rakudo', 'rakudo-install';
+
 # Author
 
 Alexey Melezhik

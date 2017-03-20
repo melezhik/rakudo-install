@@ -11,4 +11,7 @@ else
 
 fi 
 
+
 PATH=/opt/rakudo/bin:$PATH perl6 --version
+
+DEBIAN_FRONTEND=noninteractive apt-get install -y -qq git

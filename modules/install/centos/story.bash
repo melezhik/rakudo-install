@@ -7,8 +7,11 @@ if yum list installed|grep perl6-rakudo-moarvm-CentOS; then
 else
 
   file=$(story_var file)
+
   rpm -Uvh ~/.rakudo-cache/$file
 
 fi 
 
 PATH=/opt/rakudo/bin:$PATH perl6 --version
+
+yum -y -q install git
