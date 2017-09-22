@@ -3,7 +3,7 @@ my $file = $url; s{.*/(.*)}[$1] for $file;
 
 while (1){
 
-  if (os() =~ /(centos|debian)/) {
+  if (os() =~ /(centos|debian|ubuntu)/) {
     my $os = $1;  
     run_story("/download", { url => $url, file => $file })->{status} or last;
     run_story("/install/$os/", { file => $file })->{status} or last; 
