@@ -1,3 +1,7 @@
+# 0.0.20
+
+Workaround for https://github.com/nxadm/rakudo-pkg/issues/14
+
 # 0.0.13-16
 
 Add `sudo` parameter available for ubuntu install
