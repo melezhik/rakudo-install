@@ -1,4 +1,5 @@
 set -e
+sudo=$(config sudo)
 
 if dpkg -s perl6-rakudo-moarvm-debian8.7 2>&1 | grep Status: | grep 'install ok installed'; then
 
@@ -7,11 +8,21 @@ if dpkg -s perl6-rakudo-moarvm-debian8.7 2>&1 | grep Status: | grep 'install ok 
 else
 
   file=$(story_var file)
-  dpkg -i ~/.rakudo-cache/$file
+
+  if test "$sudo" = "on"; then
+    sudo dpkg -i ~/.rakudo-cache/$file
+  else 
+    dpkg -i ~/.rakudo-cache/$file
+  fi
 
 fi 
 
-
+export DEBIAN_FRONTEND=noninteractive
 PATH=/opt/rakudo/bin:$PATH perl6 --version
 
-DEBIAN_FRONTEND=noninteractive apt-get install -y -qq git
+if test "$sudo" = "on"; then
+  sudo  apt-get install -y -qq git
+else
+  apt-get install -y -qq git
+fi
+
