@@ -24,8 +24,11 @@ Platforms supported:
 
     # sets url for distro
     # The urls can be found here: https://github.com/nxadm/rakudo-pkg/releases
-    $ sparrow plg run rakudo-install --param url=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-CentOS7.3.1611-20170200-01.x86_64.rpm
-    $ sparrow plg run rakudo-install --param url=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb
+
+    $ sparrow plg run rakudo-install \
+    --param url=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-CentOS7.3.1611-20170200-01.x86_64.rpm
+    $ sparrow plg run rakudo-install \
+    --param url=https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb
 
 # Usage with sparrowdo
 
@@ -38,6 +41,17 @@ Platforms supported:
     task-run 'install Rakudo', 'rakudo-install', %(
       url =>  'https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-ubuntu16.04_20170200-01_i386.deb'
     );
+
+# Other options
+
+## sudo
+
+Set to `on` if want invoke "sudo" install. Default value is `off`.
+
+## user_install
+
+Set to `on` if you want `install_zef_as_user` rather than `install_zef_as_root` flavor when install zef manager,
+see also [rakudo-pkg documentation](https://github.com/nxadm/rakudo-pkg/releases)
 
 # Author
 
