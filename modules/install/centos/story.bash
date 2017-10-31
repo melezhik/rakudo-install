@@ -1,6 +1,6 @@
 set -e
 
-if yum list installed|grep perl6-rakudo-moarvm-CentOS; then
+if yum -q list installed rakudo 2>/dev/null; then
 
   echo 'looks like rakudo already installed, nothing to do here'
 

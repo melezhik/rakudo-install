@@ -1,3 +1,7 @@
+# 0.0.22
+
+CentoOS installer - use `rakudo` name when check if Rakudo Perl6 is already installed
+
 # 0.0.21
 
 Update documentation
