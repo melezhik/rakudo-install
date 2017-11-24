@@ -1,0 +1,11 @@
+action: install 
+url: https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-CentOS7.3.1611-20170200-01.x86_64.rpm
+os_url: 
+  centos6:  https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-CentOS7.3.1611-20170200-01.x86_64.rpm
+  centos7:  https://github.com/nxadm/rakudo-pkg/releases/download/2017.02/perl6-rakudo-moarvm-CentOS7.3.1611-20170200-01.x86_64.rpm
+  alpine:   https://github.com/nxadm/rakudo-pkg/releases/download/v2017.11/rakudo-pkg-Alpine3.6_2017.11-01_x86_64.apk
+  debian:   https://github.com/nxadm/rakudo-pkg/releases/download/v2017.11/rakudo-pkg-Debian8.9_2017.11-01_amd64.deb
+  ubuntu:   https://github.com/nxadm/rakudo-pkg/releases/download/v2017.11/rakudo-pkg-Ubuntu16.04_2017.11-01_i386.deb
+
+sudo: off
+user_install: off
