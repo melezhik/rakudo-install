@@ -1,3 +1,7 @@
+# 0.1.2
+
+- Minor documentation changes
+
 # 0.1.1
 
 - Set default distro for Fedora
