@@ -8,10 +8,11 @@ This is simple installer of Rakudo Perl6.
 
 Platforms supported:
 
-* CentOS (+RHEL)
+* CentOS
 * Ubuntu
 * Debian
 * Fedora
+* Alpine
 
 # Install
 
