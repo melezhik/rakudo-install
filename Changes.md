@@ -1,3 +1,7 @@
+# 0.1.4
+
+- Proper default distro for Ubuntu (amd64)
+
 # 0.1.2
 
 - Minor documentation changes
