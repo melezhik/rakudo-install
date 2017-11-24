@@ -1,3 +1,8 @@
+# 0.1.5
+
+- Reimplementing install zef as user logic ( underlying structure of Rakudo distribution changed )
+- Fedora support 
+
 # 0.1.4
 
 - Proper default distro for Ubuntu (amd64)
