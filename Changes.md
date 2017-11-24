@@ -1,3 +1,9 @@
+# 0.1.0
+
+- Immense refactoring
+- Alpine support
+- Default, OS specific distribution names
+
 # 0.0.22
 
 CentoOS installer - use `rakudo` name when check if Rakudo Perl6 is already installed
