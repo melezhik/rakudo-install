@@ -13,6 +13,9 @@ Platforms supported:
 * Debian
 * Fedora
 * Alpine
+* Archlinux(limited)
+
+*note*: for archlinux [zef](https://github.com/ugexe/zef) will not be installed because the installer uses a [user](https://spider-mario.quantic-telecom.net/archlinux/rakudo) binary repo without zef package.
 
 # Install
 
@@ -72,7 +75,6 @@ Alexey Melezhik
 # See also
 
 [rakudo-pkg project](https://github.com/nxadm/rakudo-pkg/releases)
-
 
 
 
