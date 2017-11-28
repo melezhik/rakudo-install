@@ -13,7 +13,7 @@ Platforms supported:
 * Debian
 * Fedora
 * Alpine
-* Archlinux(limited)
+* Archlinux ( limited support )
 
 *note*: for archlinux [zef](https://github.com/ugexe/zef) will not be installed because the installer uses a [user](https://spider-mario.quantic-telecom.net/archlinux/rakudo) binary repo without zef package.
 

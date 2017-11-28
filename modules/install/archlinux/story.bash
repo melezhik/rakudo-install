@@ -1,7 +1,9 @@
+#!/bin/bash
+
 set -e
 
 repo=$(story_var repo)
-REPO_CONFIG='/tmp/pacman_rakudo.conf'
+REPO_CONFIG="$cache_dir/pacman_rakudo.conf"
 
 cat << PACMAN_ADDITION_CONFIG > $REPO_CONFIG
 Include = /etc/pacman.conf
