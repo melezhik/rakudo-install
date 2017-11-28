@@ -1,3 +1,7 @@
+# 0.1.6
+
+Limited archlinux support - https://github.com/melezhik/rakudo-install/pull/2 , thanks to @Spigell 
+
 # 0.1.5
 
 - Reimplementing install zef as user logic ( underlying structure of Rakudo distribution changed )
