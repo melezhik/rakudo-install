@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-Install Rakudo as system package.
+Install Rakudo as a system package.
 
 # Description
 
@@ -23,15 +23,13 @@ Platforms supported:
 
 # Usage
 
-List available distributions:
+## List available distributions
 
     $ sparrow plg run rakudo-install --param search=ubuntu
 
-Install Rakudo:
+## Install Rakudo with default with default distribution
 
-## Use plguin defaults
-
-Be aware that defaults might point to pretty old versions
+Be aware that defaults might point to pretty old versions:
 
     $ sparrow plg run rakudo-install
 
@@ -43,7 +41,9 @@ This is preferable method:
     --param url=https://github.com/nxadm/rakudo-pkg/releases/download/v2017.11/rakudo-pkg-Debian8.9_2017.11-01_amd64.deb
 
 
-Sparrowdo usage:
+## Sparrowdo usage
+
+You can use Sparrowdo to install Rakudo:
 
     $ cat sparrowfile
 
