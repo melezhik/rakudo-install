@@ -27,7 +27,7 @@ Platforms supported:
 
     $ sparrow plg run rakudo-install --param search=ubuntu
 
-## Install Rakudo with default with default distribution
+## Install Rakudo with default distribution
 
 Be aware that defaults might point to pretty old versions:
 
