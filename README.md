@@ -23,50 +23,33 @@ Platforms supported:
 
 # Usage
 
-There are two flavors to set Rakudo Perl6 distribution name:
+List available distributions:
 
-## Relying on OS specific default distro
+    $ sparrow plg run rakudo-install --param search=ubuntu
 
-    # install OS specific default distro, you don't need to
-    # set it explicitly as the plugin takes care about 
-    # distro name resolution by examining OS name
+Install Rakudo:
+
+## Use plguin defaults
+
+Be aware that defaults might point to pretty old versions
 
     $ sparrow plg run rakudo-install
 
-## Or setting url for distro explicitly
+## Set distro's url explicitly
 
-    # The urls can be found here:
-    # https://github.com/nxadm/rakudo-pkg/releases :
+This is preferable method:
 
-    # For instance, Debian install:
     $ sparrow plg run rakudo-install \
     --param url=https://github.com/nxadm/rakudo-pkg/releases/download/v2017.11/rakudo-pkg-Debian8.9_2017.11-01_amd64.deb
 
 
-# Usage with sparrowdo
+Sparrowdo usage:
 
     $ cat sparrowfile
-
-    task-run 'install Rakudo', 'rakudo-install';
-
-    # or by using a specific distro:
 
     task-run 'install Rakudo', 'rakudo-install', %(
       url =>  'https://github.com/nxadm/rakudo-pkg/releases/download/v2017.11/rakudo-pkg-Debian8.9_2017.11-01_amd64.deb'
     );
-
-# Other options
-
-## sudo (\*)
-
-Set to `on` if want invoke "sudo" install. Default value is `off`.
-
-\* This option is only available for Ubuntu OS
-
-## user_install
-
-Set to `on` if you want `install_zef_as_user` rather than `install_zef_as_root` flavor when install zef manager,
-see also [rakudo-pkg documentation](https://github.com/nxadm/rakudo-pkg/releases)
 
 # Author
 
@@ -74,7 +57,5 @@ Alexey Melezhik
 
 # See also
 
-[rakudo-pkg project](https://github.com/nxadm/rakudo-pkg/releases)
-
-
+[rakudo-pkg project](https://github.com/nxadm/rakudo-pkg)
 

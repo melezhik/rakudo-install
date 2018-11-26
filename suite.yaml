@@ -10,5 +10,3 @@ os_url:
 repo:
   archlinux: https://spider-mario.quantic-telecom.net/archlinux/$repo/$arch
 
-sudo: off
-user_install: off

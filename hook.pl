@@ -1,3 +1,10 @@
+my $ search= config()->{search};
+
+if ($search) {
+  run_story("list-available");
+  exit;
+}
+
 my $os  = os();
 my $url = config()->{url} || config()->{os_url}->{$os};
 
@@ -9,16 +16,13 @@ while (1){
     my $os_short = $1;  
     run_story("/download", { url => $url, file => $file })->{status} or last;
     run_story("/install/$os_short/", { file => $file })->{status} or last; 
-    set_stdout("done");
     last;
-  }
-  elsif ( $os =~ 'archlinux' ) {
+  } elsif ( $os =~ 'archlinux' ) {
     my $repo = config()->{repo}->{$os};
     run_story("/install/$os/", { repo => $repo }) or last;
-    set_stdout("done");
     last;
   } else {
     set_stdout("os $os not supported");
-    last;
+    exit 1;
   }
 }

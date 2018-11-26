@@ -1,3 +1,7 @@
+# 0.2.1
+
+- List available distributions
+
 # 0.2.0
 
 - Remove zef install as it already installed through the most of current distros
