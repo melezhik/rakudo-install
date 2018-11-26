@@ -1,3 +1,8 @@
+# 0.2.0
+
+- Remove zef install as it already installed through the most of current distros
+- Install packages through `sudo` rather then relying on running under root.
+
 # 0.1.6
 
 Limited archlinux support - https://github.com/melezhik/rakudo-install/pull/2 , thanks to @Spigell 
