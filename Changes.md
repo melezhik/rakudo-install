@@ -1,3 +1,7 @@
+# 0.2.4
+
+- Fix available versions list 
+
 # 0.2.1
 
 - List available distributions
